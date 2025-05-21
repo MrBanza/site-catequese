@@ -192,3 +192,198 @@ footer {
 footer p {
     margin-bottom: 0.5rem;
 }
+
+.encontro-header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1.5rem;
+    border-radius: var(--border-radius) var (--border-radius) 0 0;
+    margin: -2rem -2rem 2rem -2rem;
+}
+
+.encontro-header h2 {
+    color: #fff;
+    border-bottom: none;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0;
+}
+
+.encontro-header p {
+    opacity: 0.9;
+    margin-bottom: 0;
+}
+
+.encontro-section {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.encontro-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.encontro-section h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.encontro-section h3 i {
+    margin-right: 0.5rem;
+}
+
+.encontro-section ul {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.encontro-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.encontro-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #eee;
+}
+
+.encontro-nav a {
+    display: inline-flex;
+    align-items: center;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.encontro-nav a:hover {
+    text-decoration: underline;
+}
+
+.encontro-nav a i {
+    margin: 0 0.5rem;
+}
+
+/* Índice de encontros */
+.encontros-list {
+    list-style: none;
+}
+
+.encontros-list li {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1rem;
+}
+
+.encontros-list li:last-child {
+    border-bottom: none;
+}
+
+.encontros-list a {
+    display: flex;
+    align-items: center;
+    color: var(--dark-color);
+    text-decoration: none;
+    transition: var(--transition);
+    padding: 0.5rem;
+    border-radius: var(--border-radius);
+}
+
+.encontros-list a:hover {
+    background-color: rgba(63, 81, 181, 0.1);
+    color: var(--primary-color);
+}
+
+.encontros-list a i {
+    margin-right: 1rem;
+    color: var(--primary-color);
+}
+
+/* Documentos */
+.documentos-list {
+    list-style: none;
+}
+
+.documentos-list li {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.documentos-list li:last-child {
+    border-bottom: none;
+}
+
+.documentos-list h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.documentos-list p {
+    margin-bottom: 0.5rem;
+}
+
+.documentos-list ul {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .feature {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .feature-icon {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .encontro-nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+    
+    header p {
+        font-size: 1rem;
+    }
+    
+    .card {
+        padding: 1rem;
+    }
+    
+    section {
+        padding: 1.5rem;
+    }
+    
+    .encontro-header {
+        margin: -1.5rem -1.5rem 1.5rem -1.5rem;
+        padding: 1rem;
+    }
+}
